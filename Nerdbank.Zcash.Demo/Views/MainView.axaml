@@ -1,0 +1,46 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:vm="clr-namespace:Nerdbank.Zcash.Demo.ViewModels"
+             mc:Ignorable="d" d:DesignWidth="500" d:DesignHeight="450"
+             x:Class="Nerdbank.Zcash.Demo.Views.MainView"
+             x:DataType="vm:MainViewModel">
+  <Design.DataContext>
+    <!-- This only sets the DataContext for the previewer in an IDE,
+         to set the actual DataContext for runtime, set the DataContext property in code (look at App.axaml.cs) -->
+    <vm:MainViewModel />
+  </Design.DataContext>
+
+  <StackPanel Margin="10">
+    <TextBlock Text="Welcome to Zcash" HorizontalAlignment="Center" />
+
+    <TextBlock Text="Zcash network: " />
+    <TextBlock Text="{Binding Network}" Margin="5" />
+
+    <TextBlock Text="Your seed phrase is: " />
+    <SelectableTextBlock Text="{Binding SeedPhrase}" TextWrapping="Wrap" Margin="5" />
+
+    <TextBlock Text="Your address is: " />
+    <SelectableTextBlock Text="{Binding Address}" TextWrapping="Wrap" Margin="5" />
+    <TextBlock Background="Red" Foreground="White" FontWeight="Bold" TextWrapping="Wrap"
+               TextAlignment="Center"
+               Text="⚠️ This is a volatile wallet. Do NOT send funds to it you are not prepared to lose. ⚠️" />
+    <TextBlock Text="Status: " />
+    <TextBlock Text="{Binding Status}" Margin="5" TextWrapping="Wrap" />
+
+    <TextBlock Text="Your balance is: " />
+    <TextBlock Text="{Binding Balances.MainBalance}" Margin="5" />
+
+    <WrapPanel>
+      <TextBlock Text="Send" VerticalAlignment="Center" />
+      <TextBox Text="{Binding SendAmount}" Width="100" Margin="5" />
+      <TextBlock Text="{Binding SendUnits}" VerticalAlignment="Center" />
+      <TextBlock Text=" to" VerticalAlignment="Center" />
+    </WrapPanel>
+    <DockPanel>
+      <Button Command="{Binding SendCommand}" Content="Send" DockPanel.Dock="Right" />
+      <TextBox Text="{Binding SendRecipient}" />
+    </DockPanel>
+  </StackPanel>
+</UserControl>

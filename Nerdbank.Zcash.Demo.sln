@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34607.119
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Nerdbank.Zcash.Demo", "Nerdbank.Zcash.Demo\Nerdbank.Zcash.Demo.csproj", "{CF760990-C5D3-4D34-839C-D7404AB9E4A0}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Nerdbank.Zcash.Demo.Desktop", "Nerdbank.Zcash.Demo.Desktop\Nerdbank.Zcash.Demo.Desktop.csproj", "{DE389342-C3A1-4A76-BFF4-F4DF454560E8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{4347806E-D006-44D8-B67D-54D4E99FA1A1}"
+	ProjectSection(SolutionItems) = preProject
+		nuget.config = nuget.config
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CF760990-C5D3-4D34-839C-D7404AB9E4A0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CF760990-C5D3-4D34-839C-D7404AB9E4A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CF760990-C5D3-4D34-839C-D7404AB9E4A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CF760990-C5D3-4D34-839C-D7404AB9E4A0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DE389342-C3A1-4A76-BFF4-F4DF454560E8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DE389342-C3A1-4A76-BFF4-F4DF454560E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DE389342-C3A1-4A76-BFF4-F4DF454560E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DE389342-C3A1-4A76-BFF4-F4DF454560E8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A7AD7F43-E662-4663-860A-312A2C0FB275}
+	EndGlobalSection
+EndGlobal
